@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 24
-  productGUID: af114242f20244a4a8973c45e8b5da41
+  productGUID: 692828dfd41212e43a5df174a8c9a0b3
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: My project
+  productName: RPGUdemy Course
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -771,10 +771,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: a0c0b5d7-6787-4ffd-adba-e613b0a2e728
+  cloudProjectId: e61e2708-f126-43c1-af36-71f5b76b8f8b
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: My project 2025-02-26_14-42-39
+  projectName: RPGUdemy Course
   organizationId: mirunabadin43
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
