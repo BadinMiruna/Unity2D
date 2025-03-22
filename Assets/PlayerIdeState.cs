@@ -1,9 +1,12 @@
 using UnityEngine;
-using UnityEngine.Playables;
+
+using System.Collections;
+using System.Collections.Generic;
+
 
 public class PlayerIdleState : PlayerState
 {
-    public PlayerIdleState(Player _player, PlayerStateMachine _stateMachine, string _animBooName) : base(_player, _stateMachine, _animBooName)
+    public PlayerIdleState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
     }
 
@@ -21,10 +24,10 @@ public class PlayerIdleState : PlayerState
     {
         base.Update();
 
+
         if(xInput !=0)
-            stateMachine.ChangeState(player.moveState);
-        if(Input.GetKeyDown(KeyCode.Space))
-            stateMachine.ChangeState(player.moveState);
+           stateMachine.ChangeState(player.moveState);
+      
 
     }
 }

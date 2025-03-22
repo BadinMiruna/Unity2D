@@ -1,9 +1,12 @@
 using UnityEngine;
-using UnityEngine.Playables;
+
+using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerMoveState : PlayerState
 {
-    public PlayerMoveState(Player _player, PlayerStateMachine _stateMachine, string _animBooName) : base(_player, _stateMachine, _animBooName)
+    
+    public PlayerMoveState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
     }
 
@@ -20,12 +23,11 @@ public class PlayerMoveState : PlayerState
     public override void Update()
     {
         base.Update();
-        player.SetVelocity(xInput, player.rb.velocity.y);
+        player.SetVelocity(xInput*player.moveSpeed, rb.velocity.y);
 
         if (xInput == 0)
             stateMachine.ChangeState(player.idleState);
 
-        if (Input.GetKeyDown(KeyCode.N))
-            stateMachine.ChangeState(player.idleState);
+       
     }
 }
